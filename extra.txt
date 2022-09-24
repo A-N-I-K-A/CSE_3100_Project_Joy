@@ -1,0 +1,77 @@
+// const http =require('http')
+// const fs=require('fs')
+// const port=3000
+
+
+// //conncting to the server
+// const server=http.createServer(function(req,res){
+//     res.writeHead(200,{ 'Content-Type' : 'text/html' })
+//     fs.readFile('home.html',function(error,data){
+//         if(error){
+//             res.writeHead(404)
+//             res.writeHead('Error: file not found')
+//         }
+//         else{
+//             res.write(data)
+//         }
+
+//         res.end()
+//     })
+// })
+
+
+// server.listen(port,function(error){
+//     if(error){
+//         console.log('Something went wrong',error);
+//     }
+//     else{
+//         console.log('Server is listening on port '+port);
+//     }
+// })
+
+
+
+// //database listening on port 1337
+// app.listen(1337)
+
+
+
+
+
+ res.render("output",{title:'hello'})
+
+    executeQuery('Select * from list',function(res){
+        console.log(res);
+        res.render('/output',{title:'hello'})
+        
+       
+        // res.write('<table><tr>');
+        for(var column in res[0]){
+            // res.render('<td><label>'+column+'</label></td>');
+            res.render("output",{data:column});
+            // res.write('<tr>');
+        }
+        for(var row in res){
+            // res.write('<tr>');
+            for(var column in res([row])){
+                // res.write('<td><label>'+res[row][column]+'</label></td>');
+                res.render("output",{data:res[row][column]});
+            }
+            // res.write('</tr>');
+        }
+        // res.end('</table>');
+    });
+
+
+
+
+
+    
+function executeQuery(sql,cb){
+    connection.query(sql,function(error,result,fields){
+        if(error){
+            console.log(error);
+        }
+        cb(result);
+    })
+}

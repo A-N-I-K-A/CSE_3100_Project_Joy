@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0 2px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px !important;
+    
+}
+ h2 {
+    font-family: 'Marck Script', cursive;
+    font-size: 60px !important;
+    text-shadow: 5px 5px 2px white;
+    
+}
+
+/*-------------background image------------*/
+
+.img-overlay
+{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    background-position:bottom;
+    background-size: cover;
+    background-repeat: repeat-y;
+    width: 100vw;
+    height:100vh;
+    z-index: -1;
+    
+    
+}
+
+/*-----------nav bar section--------------*/
+
+
+.navbar ul a{
+    font-family: 'Marck Script', cursive;
+    font-size: 24px;
+    margin: 0 20px;
+}
+
+.logo-img {
+    width: 100px;
+    height:100px;
+
+}
+
+
+/*--------------about us section----------*/
+
+.about-us-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.about-us-text h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+    /* text-shadow: 5px 5px 2px white; */
+    
+}
+
+.about-us-text p {
+
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 55px;
+
+
+}
+
+/* --------------testimonial section---------------*/
+
+.testimonilas-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(174, 176, 176, 0.83);
+    margin-top: 100px;
+   
+   
+}
+
+.user-image{
+
+    width:200px;
+    height:200px;
+    border-radius: 100%;
+    margin: auto;
+
+   
+}
+.user-image:hover{
+    animation: size_change 1s forwards;
+}
+
+@keyframes size_change {
+    
+    0%{
+        width:200px;
+        height:200px;
+        border-radius:100%;
+    }
+    100%{
+        width:300px;
+        height:300px;
+        border-radius:100%;
+    }
+}
+.testimonial-carousel h4{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.testimonial-carousel p{
+    font-size: 18px;
+    text-align: center;
+}
+
+
+/*------------call to action section-----------*/
+
+.call{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.call a{
+    margin-top: 40px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size:50px;
+    font-family: 'Marck Script', cursive;
+    color:black;
+    text-shadow: 5px 5px 2px white;
+    margin:50px 0 0 0;
+}
+
+.call a:hover{
+   
+    color:rgba(0, 0, 0, 0.699);
+    animation: color_change 1s forwards;
+}
+
+@keyframes color_change {
+    0%{
+        font-size:50px;
+       
+    }
+    /* 50%{
+        font-size:55px;
+    } */
+    100%{
+        font-size:60px;
+       
+    }
+}
+.call p{
+    text-align: justify;
+}
+
+/*----------consultants section-----------*/
+.consultants{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+.consultants a{
+ 
+    text-decoration: none;
+    font-size:50px;
+    font-family: 'Marck Script', cursive;
+    color:black;
+    text-shadow: 5px 5px 2px white;
+    margin:50px 0 0 0;
+}
+.consultants a:hover{
+    color:rgba(0, 0, 0, 0.699);
+    animation: color_change 1s forwards;
+}
+
+
+
+
+/*---------------footer section----------------*/
+.footer{
+    display: flex;
+    background-color: rgba(174, 176, 176, 0.83);
+    margin-top: 100px;
+    
+
+
+}
+
+.contact{
+ 
+    width: 50%;
+   
+}
+.help{
+    
+    width:50%;
+}
+
+.footer p,a{
+    font-size: 10px;
+}
+.footer a{
+    text-decoration: none;
+    color: black;
+}
+.footer a:hover{
+    color: grey;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

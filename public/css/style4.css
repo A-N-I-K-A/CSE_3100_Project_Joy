@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0 2px;
+    padding: 5px !important;
+    margin:auto;
+
+
+}
+
+h2{
+    font-family: 'Marck Script', cursive;
+    font-size: 18px;
+
+}
+
+.img-overlay
+{
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0;
+    right: 0;
+    opacity: 0.3;
+    background-position:bottom;
+    background-size: cover;
+    background-repeat: repeat-y;
+    width: 100vw;
+    height:100vh;
+    z-index: -1;
+
+
+}
+
+.add-heading:hover{
+    animation: move 1s forwards;
+}
+
+@keyframes move {
+     100%{
+        color:white;
+        background-color: black;
+     }
+
+
+}
+
+
+.add{
+    display: flex;
+    flex-direction: column;
+    margin-top:70px;
+
+
+}
+.inner-add{
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.inner-add p{
+
+    font-weight: bold;
+    font-size:25px;
+    text-align: center;
+}
+
+.inner-add button{
+    margin: 30px 215px;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+
+}
+.inner-add-links{
+    justify-content: center;
+}
+.links a{
+    color: black;
+    font-family: 'Marck Script', cursive !important;
+    font-size: 30px;
+}
+.links a:hover{
+    color: black;
+    font-family: 'Marck Script', cursive !important;
+    font-size: 30px;
+    text-decoration: none;
+    color: rgb(86, 86, 86);
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consultants</title>
+  <link rel="stylesheet" href="css/style3.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- pacifico font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <!-- Dancing script font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Pacifico&display=swap"
+    rel="stylesheet">
+
+  <!-- Marck script font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Marck+Script&family=Pacifico&display=swap"
+    rel="stylesheet">
+
+
+  <!-- bootstrap -->
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+
+
+  <!-- fontawesone -->
+  <script src="https://kit.fontawesome.com/8618f6347d.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+  <div class="img-overlay" style="background-image: url(img/back6.png);"> </div>
+
+  <div class="blogs-heading">
+    <h2>Consultants</h2>
+  </div>
+  <hr>
+
+  <div class="search">
+    <form action="/consultants" method="post" id="location-form">
+      <label for="where">Eneter your location: </label>
+      <input type="text" name="where" value= "<%= qs.location %>">
+    </form>
+
+    <div class="search-output">
+      <table class="table table-hover table-wrapper-scroll-y custom-scrollbar">
+        <thead>
+          <tr>
+            <th scope="col"> No </th>
+            <th scope="col"> Name </th>
+            <th scope="col"> Adress </th>
+            <th scope="col"> Contact no. </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Lorem ipsum </td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, tempore.</td>
+            <td>01948249384395</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit Exercitationem, nihil.</td>
+            <td>0128319283492</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit Exercitationem, nihil.</td>
+            <td>0128319283492</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit Exercitationem, nihil.</td>
+            <td>0128319283492</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Lorem ipsum</td>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit Exercitationem, nihil.</td>
+            <td>0128319283492</td>
+          </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+
+
+
+
+    <script src="node.js"></script>
+</body>
+
+</html>
